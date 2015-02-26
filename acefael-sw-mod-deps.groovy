@@ -115,30 +115,5 @@ class SmallworldModuleDependencies implements Runnable {
       print('acefael.links=')
       println(groovy.json.JsonOutput.toJson(links))
 
-      // [ module: [version: mod, version: mod], .. ]
-      // def modules = [:]
-
-      // allModules.each { mod ->
-      //   def verMod = modules.get( mod.name , [:] )
-      //   if( verMod.containsKey(mod.version) ) {
-      //     System.err.println("duplicate module definitions:")
-      //     System.err.println(mod)
-      //     System.err.println(verMod.get(mod.version))
-      //     return }
-      //   verMod.put( mod.version , mod ) }
-
-      // println( 'var sw = sw || {}' )
-      // print( 'sw.data = ' )
-      // print( groovy.json.JsonOutput.toJson( modules ) )
-      // println()
-
-      // println('digraph sw_modules {')
-      // allModules.each { m ->
-      //   if( m.requires ) {
-      //     m.requires.each { r ->
-      //       def mn=m.name // [m.name,m.version].findAll{it}.join('_')
-      //       def rn=r[0] // r.findAll{it}.join('_')
-      //       println("$mn -> $rn;")} } }
-      // println('}')
     }
     catch(Exception e){e.printStackTrace(System.err)}}}
